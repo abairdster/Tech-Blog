@@ -1,6 +1,15 @@
 <h1>Home page</h1>
 {{#each blogs}}
+<div id={{ id }} class="post">
     <h3>{{title}}</h3>
     <p>{{body}}</p>
     <hr>
-{{/each}}
+    <textarea name="" id="comment" cols="30" rows="10"></textarea>
+    <button id="commentBTN" value={{ id }}>comment</button>
+</div>
+{{#each Comments}}
+    <p>{{body}}</p>
+    {{/each}}
+    {{/each}}
+
+    <script src="/js/home.js"></script>
