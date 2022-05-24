@@ -4,7 +4,6 @@ const sequelize = require('../config/connection');
 class Blog extends Model {}
 
 Blog.init({
-    // add properites here, ex:
     title: {
          type: DataTypes.STRING,
          allowNull:false
@@ -17,4 +16,4 @@ Blog.init({
     sequelize
 });
 
-module.exports=Blog
+module.exports=Blog;
