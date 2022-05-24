@@ -3,33 +3,33 @@ const {User,Blog} = require("../models")
 
 const users = [
     {
-        username:"joe",
+        username:"JOE",
         password:"password"
     },
     {
-        username:"otherjoe",
+        username:"OtherJoe",
         password:"password1"
     },
     {
-        username:"therealjoe",
+        username:"TheRealJoe",
         password:"Password1"
     }
 ]
 
 const blogs = [
     {
-        title:"my first blog",
-        body:"Welcome to my blog, im going to do this every day! Like share subscribe",
+        title:"My first webinar",
+        body:"Welcome and Thank you for attending."
         UserId:1
     },
     {
-        title:"my final blog",
-        body:"I cant do this anymore, blogging every day is too hard.  It was a fun half week yall",
+        title:"My second webinar",
+        body:"Cant believe it, this is only the second one Ive done",
         UserId:1
     },
     {
-        title:"Cats: a review",
-        body:"I love cats I love every kind of cat.  I want to hug all them but you cant. Cant hug every cat......Cant hug every cat. ",
+        title:"Love of the potato",
+        body:"Rather starchy, but thats why we love them",
         UserId:2
     }
 ]
