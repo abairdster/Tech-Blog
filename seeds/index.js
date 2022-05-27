@@ -19,7 +19,7 @@ const users = [
 const blogs = [
     {
         title:"My first webinar",
-        body:"Welcome and Thank you for attending."
+        body:"Welcome and Thank you for attending.",
         UserId:1
     },
     {
