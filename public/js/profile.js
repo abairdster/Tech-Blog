@@ -15,7 +15,7 @@ document.querySelector("#newBlog").addEventListener("submit",e=>{
         if(res.ok){
            location.reload()
         } else {
-            alert("trumpet sound")
+            alert("BEEDO, BEEDO")
         }
     })
 })

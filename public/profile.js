@@ -1,4 +1,4 @@
-console.log("hello")
+console.log("HeyO")
 document.querySelector("#newBlog").addEventListener("submit",e=>{
     e.preventDefault()
     const blogObj = {
@@ -15,7 +15,7 @@ document.querySelector("#newBlog").addEventListener("submit",e=>{
         if(res.ok){
            location.reload()
         } else {
-            alert("sad recorder noises")
+            alert("BEEDO, BEEDO")
         }
     })
 })
