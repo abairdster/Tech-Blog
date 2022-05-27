@@ -9,7 +9,7 @@ router.get("/:id", (req, res) => {
     })
     .catch(err => {
         console.log(err);
-        res.status(500).json({ msg: err, "A error occured" });
+        res.status(500).json({ msg: "A error occured" });
     });
 });
 

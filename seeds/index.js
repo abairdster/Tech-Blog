@@ -24,12 +24,12 @@ const blogs = [
     },
     {
         title:"My second webinar",
-        body:"Cant believe it, this is only the second one Ive done",
+        body:"Cant believe it, this is only the second one I've done.",
         UserId:1
     },
     {
         title:"Love of the potato",
-        body:"Rather starchy, but thats why we love them",
+        body:"Rather starchy, but that's why we love them.",
         UserId:2
     }
 ]

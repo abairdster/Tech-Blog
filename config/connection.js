@@ -11,7 +11,7 @@ let sequelize;
             process.env.DB_PASSWORD,
             {
                 host: 'localhost',
-                dialect: 'mysql'
+                dialect: 'mysql',
                 port: 3306
             }
         );
