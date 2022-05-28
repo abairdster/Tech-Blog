@@ -1,31 +1,41 @@
-const express = require('express');
-const router = express.Router();
+// const express = require('express');
+// const router = express.Router();
 
-const userRoutes = require("./userRoutes");
-router.use("/api/users",userRoutes)
+// const userRoutes = require("./userRoutes");
+// router.use("/api/users",userRoutes)
 
-const blogRoutes = require("./blogRoutes");
-router.use("/api/blogs",blogRoutes)
+// const blogRoutes = require("./blogRoutes");
+// router.use("/api/blogs",blogRoutes)
 
-const frontEnd = require("./frontEndRoutes");
-router.use("/",frontEnd)
+// const frontEnd = require("./frontEndRoutes");
+// router.use("/",frontEnd)
 
-router.get("/showsessions",(req,res)=>{
-    res.json(req.session)
-})
+// router.get("/showsessions",(req,res)=>{
+//     res.json(req.session)
+// })
 
-router.get("/setfaveanimal/:faveanimal",(req,res)=>{
-    req.session.favAnimal = req.params.faveanimal;
-    console.log(req.session);
-    res.json(req.session);
-})
-router.get("/secretclub",(req,res)=>{
-    if(!req.session.user){
-        return res.status(401).json({msg:"ya gotta login to join the club!"})
-    }
-    res.json({msg:`welcome to the club ${req.session.user.username}`})
-})
+// router.get("/setfaveanimal/:faveanimal",(req,res)=>{
+//     req.session.favAnimal = req.params.faveanimal;
+//     console.log(req.session);
+//     res.json(req.session);
+// })
+// router.get("/secretclub",(req,res)=>{
+//     if(!req.session.user){
+//         return res.status(401).json({msg:"ya gotta login to join the club!"})
+//     }
+//     res.json({msg:`welcome to the club ${req.session.user.username}`})
+// })
 
 
+
+// module.exports = router;
+
+const router = require('express').Router();
+
+const apiRoutes = require('./api');
+const homeRoutes = require('./frontEndRoutes');
+
+router.use('/', homeRoutes);
+router.use('/api', apiRoutes);
 
 module.exports = router;

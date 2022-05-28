@@ -3,15 +3,15 @@ const Blog = require("./Blog");
 const Comment = require("./Comment");
 
 Blog.belongsTo(User,{
-    foreignKey: "userId"
+    foreignKey: "user_id",
 });
 
 Comment.belongsTo(User,{
-    foreignKey: "userId"
+    foreignKey: "user_id"
 });
 
 Blog.hasMany(Comment,{
-    foreignKey: "blogId"
+    foreignKey: "blog_id"
 });
 
 module.exports = {
